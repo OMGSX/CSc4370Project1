@@ -1,0 +1,14 @@
+body {
+	font-family: sans-serif;
+    background-color: darkgray;
+	text-align: center;
+}
+
+.o-hide {
+	opacity: 0;
+	transition: all ease 1s;
+}
+
+.o-hide:hover {
+	opacity: 1;
+}
