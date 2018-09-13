@@ -78,7 +78,6 @@ h1 {
 
 .container {
 	background-image: linear-gradient(white, black);
-	border-bottom: 0px;
 }
 
 .footer {
@@ -86,7 +85,6 @@ h1 {
 	bottom:0;
 	background-color: black;
 	height:50px;
-	background-color: black;
 	padding-bottom: 500px;
 }
 /*=========================================================================*/
@@ -140,6 +138,33 @@ h1 {
     border: 3px solid white;
     padding: 10px;
 }
+
+/*=================================| IDs |================================================*/
+
+#fast {
+    animation:             blink 300ms linear infinite;
+        -moz-animation:    blink 300ms linear infinite; 
+        -webkit-animation: blink 300ms linear infinite; 
+}
+
+#regular {
+    animation:             blink 750ms linear infinite;
+        -moz-animation:    blink 750ms linear infinite; 
+        -webkit-animation: blink 750ms linear infinite; 
+}
+
+#slow {
+    animation:             blink 1500ms linear infinite;
+        -moz-animation:    blink 1500ms linear infinite; 
+        -webkit-animation: blink 1500ms linear infinite; 
+}
+
+@keyframes             blink { 0% {opacity:0;} 50% {opacity:1;} 100% {opacity:0;} }
+    @-moz-keyframes    blink { 0% {opacity:0;} 50% {opacity:1;} 100% {opacity:0;} }
+    @-webkit-keyframes blink { 0% {opacity:0;} 50% {opacity:1;} 100% {opacity:0;} }
+
+
+/*========================================================================================*/
 
 /* CSS classes for animation need more work before they can be called */
 /*================================| Card Animations |====================================*/
