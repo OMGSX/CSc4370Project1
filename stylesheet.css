@@ -1,8 +1,53 @@
+title {
+	
+}
+
 body {
 	font-family: sans-serif;
-    background-color: darkgray;
+    background-color: black;
 	text-align: center;
 }
+
+h1 {
+	
+}
+
+/* 
+	Page Layout Classes:
+	
+		|===============================================================|
+		|								|
+		|	.header							|		
+		|		|______						|
+		|			.container				|
+		|				|________			|
+		|					   .footer		|
+		|								|
+		|===============================================================|
+
+*/
+.header {
+	font-family: Courier;
+	font-size: 65px;
+	background-color: white;
+	/*
+	border: 20px solid red;
+    border-radius: 150px;
+    text-align: center;
+    padding: 20px;
+	*/
+}
+
+.container {
+	background-image: linear-gradient(white, black);
+	border-bottom: 0px;
+}
+
+.footer {
+	background-color: black;
+	padding-bottom: 250px;
+}
+/*=========================================================================*/
 
 .o-hide {
 	opacity: 0;
@@ -11,4 +56,101 @@ body {
 
 .o-hide:hover {
 	opacity: 1;
+}
+
+.hidden {
+	display: none;
+}
+
+.menu {
+	position: -webkit-sticky; 
+	position: sticky; 
+	top: 0; 
+	padding-top: 25px;
+}
+
+.paragraph_container {
+	float: right;
+	position: absolute;
+    right: 50px;
+    width: 850px;
+    border: 3px solid white;
+    padding: 10px;
+}
+
+/* CSS classes for animation need more work before they can be called */
+/*================================| Card Animations |====================================*/
+
+.shuffle{
+	position:absolute;
+	top:0;
+	background-color:rgb(0,0,0);
+	width:28px;
+	height:28px;
+	animation-name:shuffle;
+		-webkit-animation-name:shuffle;
+	animation-duration:1.5s;
+		-webkit-animation-duration:1.5s;
+	animation-iteration-count:infinite;
+		-webkit-animation-iteration-count:infinite;
+	animation-direction:normal;
+		-webkit-animation-direction:normal;
+	transform:scale(.3);
+		-webkit-transform:scale(.3);
+	border-radius:19px;
+		-webkit-border-radius:19px;
+}
+
+#fly_in_card1{
+	left:0;
+	animation-delay:0.6s;
+		-webkit-animation-delay:0.6s;
+}
+
+#fly_in_card2{
+	left:29px;
+	animation-delay:0.75s;
+		-webkit-animation-delay:0.75s;
+}
+
+#fly_in_card3{
+	left:58px;
+	animation-delay:0.9s;
+		-webkit-animation-delay:0.9s;
+}
+
+#fly_in_card4{
+	left:88px;
+	animation-delay:1.05s;
+		-webkit-animation-delay:1.05s;
+}
+
+#fly_in_card5{
+	left:117px;
+	animation-delay:1.2s;
+		-webkit-animation-delay:1.2s;
+}
+
+@keyframes shuffle{
+	0%{
+	transform:scale(1);
+		background-color:rgb(0,0,0);
+	}
+
+	100%{
+	transform:scale(.3);
+		background-color:rgb(255,255,255);
+	}
+}
+
+@-webkit-keyframes shuffle{
+	0%{
+	-webkit-transform:scale(1);
+		background-color:rgb(0,0,0);
+	}
+
+	100%{
+	-webkit-transform:scale(.3);
+		background-color:rgb(255,255,255);
+	}
 }
