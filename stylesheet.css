@@ -1,88 +1,25 @@
-title {
-	
-}
 
 body {
 	font-family: sans-serif;
-    background-color: darkgray;
+    background-color: black;
 	text-align: center;
-	color: #eeeeee;
-}
-
-h1 {
-	
 }
 
 /* 
 	Page Layout Classes:
 	
-		|===============================================================|
-		|								|
+		|===================================|
+		|									|
 		|	.header							|		
-		|		|______						|
+		|		|___						|
 		|			.container				|
-		|				|________			|
-		|					   .footer		|
-		|								|
-		|===============================================================|
-*/
-.header {
-	font-family: sans-serif;
-	font-size: 65px;
-	/*
-	border: 20px solid red;
-    border-radius: 150px;
-    text-align: center;
-    padding: 20px;
-	*/
-}
-
-ul.topnav {
-	list-style-type:none;
-	margin: 0;
-	padding: 0;
-	overflow:hidden;
-	background-color: #333333;
-}
-
-<<<<<<< HEAD
-li {
-	float: left;
-}
-
-li a{
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
-
-li a:hover {
-	background-color: #222222;
-}
-
-.container {
-=======
-h1 {
-	
-}
-
-/* 
-	Page Layout Classes:
-	
-		|===============================================================|
-		|								|
-		|	.header							|		
-		|		|______						|
-		|			.container				|
-		|				|________			|
-		|					   .footer		|
-		|								|
-		|===============================================================|
+		|				|_______			|
+		|						.footer		|
+		|									|
+		|===================================|
 
 */
-.header {
+.header h1{
 	font-family: Courier;
 	font-size: 65px;
 	background-color: white;
@@ -94,23 +31,21 @@ h1 {
 	*/
 }
 
+.header audio {
+	border-top: 50px;
+}
+
 .container {
 	background-image: linear-gradient(white, black);
->>>>>>> 3ba9802a7a1dc0cc5bac6757e161c596037f2643
 	border-bottom: 0px;
 }
 
 .footer {
-<<<<<<< HEAD
-	position:relative;
-	bottom:0;
-	background-color: black;
-	height:50px;
-=======
 	background-color: black;
 	padding-bottom: 500px;
 }
 /*=========================================================================*/
+
 /*==========================| Custom scrollbar |===========================*/
 /* width */
 ::-webkit-scrollbar {
@@ -130,7 +65,6 @@ h1 {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: black; 
->>>>>>> 3ba9802a7a1dc0cc5bac6757e161c596037f2643
 }
 /*=========================================================================*/
 
@@ -146,100 +80,3 @@ h1 {
 .hidden {
 	display: none;
 }
-
-.menu {
-	position: -webkit-sticky; 
-	position: sticky; 
-	top: 0; 
-	padding-top: 25px;
-}
-
-.paragraph_container {
-	float: right;
-	position: absolute;
-    right: 50px;
-    width: 850px;
-    border: 3px solid white;
-    padding: 10px;
-}
-
-/* CSS classes for animation need more work before they can be called */
-/*================================| Card Animations |====================================*/
-
-.shuffle{
-	position:absolute;
-	top:0;
-	background-color:rgb(0,0,0);
-	width:28px;
-	height:28px;
-	animation-name:shuffle;
-		-webkit-animation-name:shuffle;
-	animation-duration:1.5s;
-		-webkit-animation-duration:1.5s;
-	animation-iteration-count:infinite;
-		-webkit-animation-iteration-count:infinite;
-	animation-direction:normal;
-		-webkit-animation-direction:normal;
-	transform:scale(.3);
-		-webkit-transform:scale(.3);
-	border-radius:19px;
-		-webkit-border-radius:19px;
-}
-
-#fly_in_card1{
-	left:0;
-	animation-delay:0.6s;
-		-webkit-animation-delay:0.6s;
-}
-
-#fly_in_card2{
-	left:29px;
-	animation-delay:0.75s;
-		-webkit-animation-delay:0.75s;
-}
-
-#fly_in_card3{
-	left:58px;
-	animation-delay:0.9s;
-		-webkit-animation-delay:0.9s;
-}
-
-#fly_in_card4{
-	left:88px;
-	animation-delay:1.05s;
-		-webkit-animation-delay:1.05s;
-}
-
-#fly_in_card5{
-	left:117px;
-	animation-delay:1.2s;
-		-webkit-animation-delay:1.2s;
-}
-
-@keyframes shuffle{
-	0%{
-	transform:scale(1);
-		background-color:rgb(0,0,0);
-	}
-
-	100%{
-	transform:scale(.3);
-		background-color:rgb(255,255,255);
-	}
-}
-
-@-webkit-keyframes shuffle{
-	0%{
-	-webkit-transform:scale(1);
-		background-color:rgb(0,0,0);
-	}
-
-	100%{
-	-webkit-transform:scale(.3);
-		background-color:rgb(255,255,255);
-	}
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 3ba9802a7a1dc0cc5bac6757e161c596037f2643
